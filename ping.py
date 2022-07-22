@@ -157,13 +157,4 @@ class Pinger(object):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Python ping')
-    parser.add_argument('host', action="store", help=u'host')
-    parser.add_argument('-c', action="store", dest="count", default=3, type=int,
-                        help=u'number of ping')    
-    parser.add_argument('-t', action="store", dest="timeout", default=2, 
-                        type=int, help=u'timeout')      
-    given_args = parser.parse_args()  
-    pinger = Pinger(target_host=given_args.host, count=given_args.count, 
-                    timeout=given_args.timeout)
-    pinger.ping()
+    print("=======kim——test========="*10+"\n")
